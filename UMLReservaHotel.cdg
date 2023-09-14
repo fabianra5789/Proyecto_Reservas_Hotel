@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.biz">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="biz" visibility="public" xPosition="238.0" yPosition="865.0">
+      <Fields>
+        <Field name="codigoCliente" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Persona" name="persona"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPersona" returnType="Persona" visibility="public"/>
+        <Method name="setPersona" returnType="Persona" visibility="public">
+          <Argument type="Persona" name="persona"/>
+        </Method>
+        <Method name="getCodigoCliente" returnType="int" visibility="public"/>
+        <Method name="setCodigoCliente" returnType="int" visibility="public">
+          <Argument type="int" name="codigoCliente"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Consumo" package="biz" visibility="public" xPosition="1456.0" yPosition="414.0">
+      <Fields>
+        <Field name="producto" type="Productos" visibility="private"/>
+        <Field name="costoFinal" type="int" visibility="private"/>
+        <Field name="servicios" type="Servicios" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Producto" name="producto"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getProducto" returnType="Productos" visibility="public"/>
+        <Method name="setProducto" returnType="Producto" visibility="public">
+          <Argument type="Producto" name="producto"/>
+        </Method>
+        <Method name="getCostoFinal" returnType="int" visibility="public"/>
+        <Method name="setCostoFinal" returnType="int" visibility="public">
+          <Argument type="int" name="costoFinal"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Habitacion" package="biz" visibility="public" xPosition="166.0" yPosition="367.0">
+      <Fields>
+        <Field name="estadoHabitacion" type="String" visibility="private"/>
+        <Field name="pisoHabitacion" type="int" visibility="private"/>
+        <Field name="numeroHabitacion" type="int" visibility="private"/>
+        <Field name="CostoHabitacion" type="int" visibility="private"/>
+        <Field name="descripcionHabitacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEstadoHabitacion" returnType="String" visibility="public"/>
+        <Method name="setEstadoHabitacion" returnType="String" visibility="public">
+          <Argument type="String" name="estadoHabitacion"/>
+        </Method>
+        <Method name="getPisoHabitacion" returnType="int" visibility="public"/>
+        <Method name="setPisoHabitacion" returnType="int" visibility="public">
+          <Argument type="int" name="pisoHabitacion"/>
+        </Method>
+        <Method name="getNumeroHabitacion" returnType="int" visibility="public"/>
+        <Method name="setNumeroHabitacion" returnType="int" visibility="public">
+          <Argument type="int" name="numeroHabitacion"/>
+        </Method>
+        <Method name="getCostoHabitacion" returnType="int" visibility="public"/>
+        <Method name="setCostoHabitacion" returnType="int" visibility="public">
+          <Argument type="int" name="CostoHabitacion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Hotel" package="biz" visibility="public" xPosition="249.0" yPosition="26.0">
+      <Fields>
+        <Field name="correo" type="String" visibility="private"/>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="paginaWeb" type="String" visibility="private"/>
+        <Field name="nombreHotel" type="String" visibility="private"/>
+        <Field name="huesped" type="Huesped" visibility="private"/>
+        <Field name="habitacion" type="Habitacion" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="biz" visibility="public" isAbstract="true" xPosition="677.0" yPosition="839.0">
+      <Fields>
+        <Field name="nombrePersona" type="String" visibility="private"/>
+        <Field name="tipoDocumento" type="String" visibility="private"/>
+        <Field name="telefono" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdPersona" returnType="int" visibility="public"/>
+        <Method name="setIdPersona" returnType="int" visibility="public">
+          <Argument type="int" name="idPersona"/>
+        </Method>
+        <Method name="getNombrePersona" returnType="String" visibility="public"/>
+        <Method name="setNombrePersona" returnType="String" visibility="public">
+          <Argument type="String" name="nombrePersona"/>
+        </Method>
+        <Method name="getTipoDocumento" returnType="String" visibility="public"/>
+        <Method name="setTipoDocumento" returnType="String" visibility="public">
+          <Argument type="String" name="tipoDocumento"/>
+        </Method>
+        <Method name="getTelefono" returnType="int" visibility="public"/>
+        <Method name="setTelefono" returnType="int" visibility="public">
+          <Argument type="int" name="telefono"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Productos" package="biz" visibility="public" xPosition="1796.0" yPosition="138.0">
+      <Fields>
+        <Field name="idProducto" type="int" visibility="private"/>
+        <Field name="nombreProducto" type="String" visibility="private"/>
+        <Field name="costoProducto" type="int" visibility="private"/>
+        <Field name="descripcionProducto" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdProducto" returnType="int" visibility="public"/>
+        <Method name="setIdProducto" returnType="int" visibility="public">
+          <Argument type="int" name="idProducto"/>
+        </Method>
+        <Method name="getNombreProducto" returnType="String" visibility="public"/>
+        <Method name="setNombreProducto" returnType="String" visibility="public">
+          <Argument type="String" name="nombreProducto"/>
+        </Method>
+        <Method name="getCostoProducto" returnType="int" visibility="public"/>
+        <Method name="setCostoProducto" returnType="int" visibility="public">
+          <Argument type="int" name="costoProducto"/>
+        </Method>
+        <Method name="getDescripcionProducto" returnType="String" visibility="public"/>
+        <Method name="setDescripcionProducto" returnType="String" visibility="public">
+          <Argument type="String" name="descripcionProducto"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Reserva" package="biz" visibility="public" xPosition="723.0" yPosition="207.0">
+      <Fields>
+        <Field name="cliente" type="Cliente" visibility="private"/>
+        <Field name="consumo" type="Consumo" visibility="private"/>
+        <Field name="trabajador" type="Trabajador" visibility="private"/>
+        <Field name="costoReserva" type="int" visibility="private"/>
+        <Field name="fechaEntrada" type="Date" visibility="private"/>
+        <Field name="fechaSalida" type="Date" visibility="private"/>
+        <Field name="huesped" type="Huesped" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Habitacion" name="habitacion"/>
+          <Argument type="Cliente" name="cliente"/>
+          <Argument type="Consumo" name="consumo"/>
+          <Argument type="Trabajador" name="trabajador"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CostoFinal" returnType="void" visibility="public"/>
+        <Method name="getHabitacion" returnType="Habitacion" visibility="public"/>
+        <Method name="setHabitacion" returnType="Habitacion" visibility="public">
+          <Argument type="Habitacion" name="habitacion"/>
+        </Method>
+        <Method name="getCliente" returnType="Cliente" visibility="public"/>
+        <Method name="setCliente" returnType="Cliente" visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Method>
+        <Method name="getConsumo" returnType="Consumo" visibility="public"/>
+        <Method name="setConsumo" returnType="Consumo" visibility="public">
+          <Argument type="Consumo" name="consumo"/>
+        </Method>
+        <Method name="getTrabajador" returnType="Trabajador" visibility="public"/>
+        <Method name="setTrabajador" returnType="Trabajador" visibility="public">
+          <Argument type="Trabajador" name="trabajador"/>
+        </Method>
+        <Method name="getCostoReserva" returnType="int" visibility="public"/>
+        <Method name="setCostoReserva" returnType="int" visibility="public">
+          <Argument type="int" name="costoReserva"/>
+        </Method>
+        <Method name="getFechaEntrada" returnType="int" visibility="public"/>
+        <Method name="setFechaEntrada" returnType="int" visibility="public">
+          <Argument type="int" name="fechaEntrada"/>
+        </Method>
+        <Method name="getFechaSalida" returnType="int" visibility="public"/>
+        <Method name="setFechaSalida" returnType="int" visibility="public">
+          <Argument type="int" name="fechaSalida"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Trabajador" package="biz" visibility="public" xPosition="1159.0" yPosition="839.0">
+      <Fields>
+        <Field name="idTrabajador" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdTrabajador" returnType="int" visibility="public"/>
+        <Method name="setIdTrabajador" returnType="int" visibility="public">
+          <Argument type="int" name="idTrabajador"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Servicios" package="" visibility="public" xPosition="1796.0" yPosition="561.0">
+      <Fields>
+        <Field name="nombreServicio" type="String" visibility="private"/>
+        <Field name="costo" type="int" visibility="private"/>
+        <Field name="tipoServicio" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Huesped" package="" visibility="public" xPosition="497.0" yPosition="77.0">
+      <Fields>
+        <Field name="nombrePersona" type="String" visibility="private"/>
+        <Field name="documento" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="trabajador" source="biz.Reserva" target="biz.Trabajador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="biz.Trabajador" target="biz.Persona"/>
+    <HasRelation name="producto" source="biz.Consumo" target="biz.Productos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hotel" source="biz.Hotel" target="biz.Habitacion" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Reserva" source="biz.Reserva" target="Huesped" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Hotel" source="biz.Hotel" target="Huesped" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="biz.Cliente" target="biz.Persona"/>
+    <HasRelation name="habitaciones" source="Huesped" target="biz.Habitacion" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="servicio" source="biz.Consumo" target="Servicios" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="biz.Reserva" target="biz.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consumo" source="biz.Reserva" target="biz.Consumo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
